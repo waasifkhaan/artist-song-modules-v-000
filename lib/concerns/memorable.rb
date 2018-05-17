@@ -16,7 +16,7 @@ module Memorable
 module InstanceMethods
   def initialize
     @@artists << self
-    @songs = []
+    # @songs = []
   end
   
   def to_param
