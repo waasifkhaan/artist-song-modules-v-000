@@ -15,7 +15,7 @@ module Memorable
 
 module InstanceMethods
   def initialize
-    self.all << self
+    all << self
   end
   
   def to_param
