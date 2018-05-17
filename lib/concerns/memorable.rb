@@ -14,7 +14,10 @@ module Memorable
   end 
 
 module InstanceMethods
-  
+  def initialize
+    @@artists << self
+    @songs = []
+  end
   
   def to_param
   name.downcase.gsub(' ', '-')
